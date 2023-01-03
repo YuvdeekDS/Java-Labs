@@ -16,8 +16,10 @@ public class Customer {
 	public String getSurname() {
 		return surName;
 	}
-	
+
+	@Override
 	public String toString() {
 		return getName()+". "+getSurname();
 	}
+
 }
