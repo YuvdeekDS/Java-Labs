@@ -3,11 +3,12 @@ import java.util.List;
 import java.util.ArrayList;
 public class Order {
 
-	private List<Pizza> pizzas= new ArrayList<Pizza>();
+	private List<Pizza> pizzas;
 	private Customer customer;
 	
 	public Order(Customer cust) {
 		this.customer = cust;
+		this.pizzas = new ArrayList<Pizza>();
 
 	}
 	public void addPizza(Pizza pizza) {
