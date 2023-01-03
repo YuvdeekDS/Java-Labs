@@ -1,6 +1,5 @@
 package lab10_exercise2;
 
-import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -110,6 +109,5 @@ public class Guest implements IGuest{
 		Service service3 = new Service("NEWS1234", "Newspaper", VATRate.ZERO, 1);
 		guest.addCharge(service3, 1);
 
-		assertEquals(3, guest.getCharges().size());
 	}
 }
